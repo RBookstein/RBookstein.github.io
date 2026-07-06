@@ -152,7 +152,7 @@ main{ margin-top: 22px; }
 .cv h2{
   margin: 0 0 12px;
   padding-bottom: 8px;
-  font-size: 1.3rem;
+  font-size: clamp(1.9rem, 3.2vw, 2.5rem);
   border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
   display:inline-block;
 }
