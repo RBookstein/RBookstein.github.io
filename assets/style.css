@@ -107,6 +107,9 @@ main{ margin-top: 22px; }
 .hero h1{
   margin:0 0 10px;
   font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+  padding-bottom: 8px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  display:inline-block;
 }
 .hero p{ margin: 10px 0 0; color: var(--text); font-size: 1.05rem; max-width: 64ch; }
 
