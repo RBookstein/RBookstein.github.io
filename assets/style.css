@@ -210,3 +210,73 @@ main{ margin-top: 22px; }
   .header{ flex-direction:column; align-items:flex-start; gap:12px; }
   .nav{ justify-content:flex-start; }
 }
+
+/* ===== Single-page layout (jacobrbrown.com-inspired) ===== */
+.onepage{ max-width: 760px; position:relative; padding-top: 48px; }
+
+.theme-toggle-corner{
+  position:absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.intro{ text-align:center; }
+.portrait{
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border:1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.intro .name{
+  margin: 22px 0 4px;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+}
+.intro .tagline{
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+.linkrow{
+  margin: 14px 0 0;
+  font-size: 1.02rem;
+}
+.linkrow span{ color: var(--muted); margin: 0 6px; }
+.intro .bio{
+  margin: 26px auto 0;
+  text-align:left;
+  max-width: 66ch;
+  font-size: 1.05rem;
+}
+
+.onepage .section{ margin-top: 44px; }
+.onepage .section h2{
+  margin: 0 0 14px;
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  display:inline-block;
+}
+.onepage .section h3{ margin: 22px 0 8px; font-size: 1.05rem; }
+.pubs{ margin: 0; padding-left: 20px; }
+.pubs li{ margin: 12px 0; }
+
+/* Sub-pages (slides/content) in the same minimal style */
+.pagehead{ margin-top: 6px; }
+.pagehead .backlink{ margin: 0 0 18px; }
+.pagehead .backlink a{ color: var(--muted); }
+.pagehead .backlink a:hover{ color: var(--link); }
+.pagehead h1{
+  margin: 0 0 4px;
+  font-size: clamp(1.7rem, 3.4vw, 2.2rem);
+  padding-bottom: 8px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  display:inline-block;
+}
+.pagehead .tagline{ margin: 6px 0 0; color: var(--muted); }
+
+@media (max-width: 560px){
+  .portrait{ width: 180px; height: 180px; }
+  .theme-toggle-corner{ top: 12px; right: 12px; }
+}
