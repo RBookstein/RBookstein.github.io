@@ -27,7 +27,7 @@
       document.documentElement.classList.add("dark");
     }
   </script>
-  <link rel="stylesheet" href="assets/style.css?v=6" />
+  <link rel="stylesheet" href="assets/style.css?v=7" />
   <link rel="icon" type="image/png" href="assets/favicon.png?v=1" />
 </head>
 <body>
@@ -42,7 +42,7 @@
       </svg>
     </button>
 
-    <header class="intro">
+    <header id="intro" class="intro">
       <img
         class="portrait"
         src="assets/headshot.jpg"
@@ -51,17 +51,35 @@
       />
       <h1 class="name">Ryan Bookstein</h1>
       <p class="tagline">PhD Student &bull; Department of Government and Politics &bull; University of Maryland</p>
-      <p class="linkrow">
+      <p class="email">rbookste [at] umd [dot] edu</p>
+      <nav class="linkrow">
+        <a href="#intro">Home</a>
+        <a href="#publications">Research</a>
+        <a href="#teaching">Teaching</a>
         <a href="view/cv.html" target="_blank" rel="noopener">CV</a>
-        <span aria-hidden="true">|</span>
-        <a href="mailto:rbookste@umd.edu">Email</a>
+      </nav>
+      <p class="bio">
+        I am a fourth-year PhD student in the Department of Government and Politics at the University of Maryland. My research centers on American political institutions, with a focus on how legislators allocate and distribute resources across their constituencies and how committees shape legislative behavior.
       </p>
       <p class="bio">
-        I am a fourth-year PhD student in the Department of Government and Politics at the University of Maryland. My research centers on American political institutions, with a focus on how legislators allocate and distribute resources across their constituencies and how committees shape legislative behavior. I also teach courses on quantitative methodology and data science. My work has been published in <em>Congress &amp; the Presidency</em>.
+        At UMD, I teach courses on quantitative methodology and data science.
+      </p>
+      <p class="bio">
+        My work has been published in <em>Congress &amp; the Presidency</em>.
       </p>
     </header>
 
     <main>
+      <section id="publications" class="section">
+        <h2>Publications</h2>
+        <ul class="pubs">
+          <li>
+            <a href="https://www.tandfonline.com/doi/full/10.1080/07343469.2026.2638764" target="_blank" rel="noopener">Party Defection in Senate Confirmations of Executive Nominees</a>
+            (with Kristina C. Miler). <em>Congress &amp; the Presidency</em>.
+          </li>
+        </ul>
+      </section>
+
       <section id="working-papers" class="section">
         <h2>Working Papers</h2>
         <ul class="pubs">
@@ -70,16 +88,6 @@
           <li>&ldquo;Committees as Vehicles for Issue-Specific Lawmaking Effectiveness.&rdquo;</li>
           <li>&ldquo;Representational Infrastructure: Local Resource Allocation in the Senate.&rdquo;</li>
           <li>&ldquo;Measuring Localism in Congressional Communication.&rdquo;</li>
-        </ul>
-      </section>
-
-      <section id="publications" class="section">
-        <h2>Publications</h2>
-        <ul class="pubs">
-          <li>
-            <a href="https://www.tandfonline.com/doi/full/10.1080/07343469.2026.2638764" target="_blank" rel="noopener">Party Defection in Senate Confirmations of Executive Nominees</a>
-            (with Kristina C. Miler). <em>Congress &amp; the Presidency</em>.
-          </li>
         </ul>
       </section>
 

@@ -238,9 +238,27 @@ main{ margin-top: 22px; }
   color: var(--muted);
   font-size: 1rem;
 }
+.intro .email{
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
 .linkrow{
-  margin: 14px 0 0;
+  margin: 16px 0 0;
   font-size: 1.02rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.linkrow a{
+  padding: 6px 14px;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 6px;
+  text-decoration: none;
+}
+.linkrow a:hover{
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
 }
 .linkrow span{ color: var(--muted); margin: 0 6px; }
 .intro .bio{
@@ -250,7 +268,7 @@ main{ margin-top: 22px; }
   font-size: 1.05rem;
 }
 
-.onepage .section{ margin-top: 44px; }
+.onepage .section{ margin-top: 72px; }
 .onepage .section h2{
   margin: 0 0 14px;
   font-size: 1.5rem;
