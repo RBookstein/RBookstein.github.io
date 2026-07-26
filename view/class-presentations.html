@@ -4,17 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Class Presentations — Ryan Bookstein</title>
+  <!-- Theme: dark by default; apply before render to avoid flash -->
+  <script>
+    if (localStorage.getItem("theme") !== "light") {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/pdfview.css?v=1" />
   <link rel="icon" type="image/png" href="../assets/favicon.png?v=1" />
-  <style>
-    html,body{margin:0;height:100%;background:#525659;}
-    iframe{border:0;width:100%;height:100vh;display:block;}
-    .fallback{color:#eee;font-family:system-ui,Arial,sans-serif;padding:24px;}
-    .fallback a{color:#ffd520;}
-  </style>
 </head>
 <body>
-  <iframe src="../assets/slides/data-science-05-class-presentations.pdf" title="Class Presentations — Ryan Bookstein">
-    <p class="fallback">Your browser can&rsquo;t display embedded PDFs. <a href="../assets/slides/data-science-05-class-presentations.pdf">Open the PDF</a>.</p>
-  </iframe>
+  <!-- Desktop: the browser's built-in multi-page PDF viewer. -->
+  <iframe class="pdfframe" src="../assets/slides/data-science-05-class-presentations.pdf" title="Class Presentations — Ryan Bookstein"></iframe>
+
+  <!-- Phones and tablets only render page 1 of an iframed PDF, so pdfview.css
+       swaps the iframe for this hand-off to the device's own PDF viewer. -->
+  <main class="handoff">
+    <p class="backlink"><a href="../slides.html">&larr; Introduction to Data Science</a></p>
+    <h1>Class Presentations</h1>
+    <p class="meta">Slides · PDF</p>
+    <p class="btnrow"><a class="btn" href="../assets/slides/data-science-05-class-presentations.pdf">Open PDF</a></p>
+    <p class="tip">Opens in your browser&rsquo;s PDF viewer, which scrolls through every page.</p>
+  </main>
 </body>
 </html>
