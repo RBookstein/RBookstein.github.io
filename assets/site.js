@@ -8,6 +8,32 @@ document.addEventListener("DOMContentLoaded", () => {
     if (href === path) a.setAttribute("aria-current", "page");
   });
 
+  // Keep the address bar reading as the bare domain on the home page: drop any
+  // "index.html" and strip the #section hash once we have scrolled to it.
+  if (document.body.hasAttribute("data-home")) {
+    const homeUrl = location.pathname.replace(/index\.html$/, "") || "/";
+    const tidyUrl = () => {
+      try { history.replaceState(null, "", homeUrl); } catch (e) { /* file:// preview */ }
+    };
+    const jumpTo = hash => {
+      const target = hash.length > 1 && document.getElementById(hash.slice(1));
+      if (target) target.scrollIntoView();
+    };
+
+    jumpTo(location.hash);
+    tidyUrl();
+
+    // In-page nav: scroll manually so the click never writes a hash to the URL.
+    document.querySelectorAll('nav a[href^="#"]').forEach(a => {
+      a.addEventListener("click", e => {
+        e.preventDefault();
+        const target = document.getElementById(a.getAttribute("href").slice(1));
+        if (target) target.scrollIntoView({ behavior: "smooth" });
+        tidyUrl();
+      });
+    });
+  }
+
   // Dark/light toggle — dark is the default; choice persists via localStorage
   document.querySelectorAll(".theme-toggle").forEach(btn => {
     btn.addEventListener("click", () => {
