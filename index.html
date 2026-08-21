@@ -44,12 +44,19 @@
     </button>
 
     <header id="intro" class="intro">
-      <img
-        class="portrait"
-        src="/assets/headshot.jpg"
-        alt="Ryan Bookstein headshot"
-        onerror="this.style.display='none'"
-      />
+      <picture>
+        <source srcset="/assets/headshot.webp?v=2" type="image/webp" />
+        <img
+          class="portrait"
+          src="/assets/headshot.jpg?v=2"
+          alt="Ryan Bookstein headshot"
+          width="240"
+          height="240"
+          decoding="async"
+          fetchpriority="high"
+          onerror="this.style.display='none'"
+        />
+      </picture>
       <h1 class="name">Ryan Bookstein</h1>
       <p class="tagline">PhD Student &bull; Department of Government and Politics &bull; University of Maryland</p>
       <p class="email">rbookste [at] umd [dot] edu</p>
