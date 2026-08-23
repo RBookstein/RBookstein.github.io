@@ -372,19 +372,19 @@ main{ margin-top: 22px; }
   text-align: center;
 }
 
-/* Website Carbon badge, recoloured to the site palette. The badge injects its
-   own <style> into #wcb at runtime, so these rules carry the extra `body`
-   specificity they need to win against it. */
-body #wcb.carbonbadge{
-  --b1: var(--accent);    /* text and the right-hand pill */
-  --b2: var(--accent-2);  /* pill borders */
-  font-size: .82rem;
-}
-body #wcb.carbonbadge #wcb_g{
-  background: var(--surface);
-  color: var(--text);
-}
-body #wcb.carbonbadge #wcb_2{
+/* Carbon estimate line. Static rather than the Website Carbon badge: no
+   third-party script, no request on every page load, nothing to break when
+   someone else's API is down. */
+.carbon{
+  margin: 0;
+  font-size: .85rem;
   color: var(--muted);
-  font-size: .95em;
+}
+.carbon strong{
+  color: var(--text);
+  font-weight: 600;
+}
+.carbon sub{
+  vertical-align: baseline;
+  font-size: .75em;
 }
