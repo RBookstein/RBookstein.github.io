@@ -371,11 +371,6 @@ main{ margin-top: 22px; }
   border-top: 1px solid var(--border);
   text-align: center;
 }
-.sitefoot .footnote{
-  margin: 14px 0 0;
-  font-size: .85rem;
-  color: var(--muted);
-}
 
 /* Website Carbon badge, recoloured to the site palette. The badge injects its
    own <style> into #wcb at runtime, so these rules carry the extra `body`
