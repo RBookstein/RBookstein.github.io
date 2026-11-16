@@ -5,122 +5,81 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>GVPT 622 — Slides • Ryan Bookstein</title>
   <meta name="description" content="Lecture slides for GVPT 622: Quantitative Methods for Political Science, taught by Ryan Bookstein at the University of Maryland." />
-  <!-- Theme: dark by default; apply before render to avoid flash -->
   <script>
-    if (localStorage.getItem("theme") !== "light") {
-      document.documentElement.classList.add("dark");
-    }
+    try { if (localStorage.getItem("theme") !== "light") document.documentElement.classList.add("dark"); }
+    catch (e) { document.documentElement.classList.add("dark"); }
   </script>
-  <link rel="stylesheet" href="/assets/style.css?v=6" />
   <link rel="icon" type="image/png" href="/assets/favicon.png?v=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap" />
+  <link rel="stylesheet" href="/assets/main.css?v=1" />
 </head>
 <body>
-  <div class="container onepage">
+  <button class="theme-toggle corner" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        <svg class="moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+      </button>
 
-    <button class="theme-toggle theme-toggle-corner" aria-label="Toggle dark mode" title="Toggle dark mode">
-      <svg class="sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-      </svg>
-      <svg class="moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-      </svg>
-    </button>
+  <main class="page">
+    <p class="backlink"><a href="/#teaching">&larr; Ryan Bookstein</a></p>
+    <h1>GVPT 622: Quantitative Methods for Political Science</h1>
+    <p class="sub">Fall 2026. Lab slides and materials.</p>
+    <!--
+      HOW TO POST A SLIDE DECK:
+      1. Drop the PDF into the assets/ folder.
+      2. Create a viewer page at view/<slug>/index.html (copy an existing one
+         and swap the PDF path and title).
+      3. In the matching session below, replace the "Materials will be posted
+         here." line with:  <p class="mats"><a class="btn" href="/view/<slug>/" target="_blank" rel="noopener">Slides</a></p>
+    -->
+    <section class="session">
+      <h2><span class="date">September 11</span>Descriptive Statistics</h2>
+      <p class="mats"><a class="btn" href="/view/gvpt622-descriptive-statistics/" target="_blank" rel="noopener">Slides</a><a class="btn" href="/assets/attendance_cel_panel.csv" download>Dataset</a></p>
+    </section>
+    <section class="session">
+      <h2><span class="date">September 18</span>Research Design</h2>
+      <p class="mats"><a class="btn" href="/view/gvpt622-research-design/" target="_blank" rel="noopener">Slides</a></p>
+    </section>
+    <section class="session">
+      <h2><span class="date">September 25</span>Relationships Between Two Variables</h2>
+      <p class="mats"><a class="btn" href="/view/gvpt622-relationships-two-variables/" target="_blank" rel="noopener">Slides</a></p>
+    </section>
+    <section class="session">
+      <h2><span class="date">October 2</span>Midterm Exam Review</h2>
+    </section>
+    <section class="session">
+      <h2><span class="date">October 9</span>Probability Theory</h2>
+      <p class="mats"><a class="btn" href="/view/gvpt622-probability-theory/" target="_blank" rel="noopener">Slides</a></p>
+    </section>
+    <section class="session">
+      <h2><span class="date">October 23</span>Hypothesis Testing I</h2>
+      <p class="mats"><a class="btn" href="/view/gvpt622-statistical-inference/" target="_blank" rel="noopener">Slides</a></p>
+    </section>
+    <section class="session">
+      <h2><span class="date">October 30</span>Hypothesis Testing II</h2>
+      <p class="mats"><a class="btn" href="/view/gvpt622-hypothesis-testing-ii/" target="_blank" rel="noopener">Slides</a></p>
+    </section>
+    <section class="session">
+      <h2><span class="date">November 6</span>Hypothesis Testing III</h2>
+      <p class="mats"><a class="btn" href="/view/gvpt622-hypothesis-testing-iii/" target="_blank" rel="noopener">Slides</a></p>
+    </section>
+    <section class="session">
+      <h2><span class="date">November 13</span>Midterm Exam Review</h2>
+    </section>
+    <section class="session">
+      <h2><span class="date">November 20</span>Regression Analysis I</h2>
+      <p class="soon">Materials will be posted here.</p>
+    </section>
+    <section class="session">
+      <h2><span class="date">December 4</span>Regression Analysis II</h2>
+      <p class="soon">Materials will be posted here.</p>
+    </section>
+    <section class="session">
+      <h2><span class="date">December 11</span>Final Exam Review</h2>
+      <p class="soon">Materials will be posted here.</p>
+    </section>
+  </main>
 
-    <header class="pagehead">
-      <p class="small backlink"><a href="/#teaching">&larr; Ryan Bookstein</a></p>
-      <h1>GVPT 622: Quantitative Methods for Political Science</h1>
-      <p class="tagline">Fall 2026 &bull; Lab slides and materials</p>
-    </header>
-
-    <main>
-      <section class="section">
-        <!--
-          HOW TO POST A SLIDE DECK:
-          1. Drop the file into the assets/ folder (PDF works best).
-          2. Create a viewer page at view/<slug>/index.html (copy an existing one
-             and swap the PDF path and title).
-          3. Add one <li> under the matching date below, pointing at /view/<slug>/.
-        -->
-
-        <h3>September 11 &mdash; Descriptive Statistics</h3>
-        <ul class="pubs">
-          <li><a href="/view/gvpt622-descriptive-statistics/" target="_blank" rel="noopener">Slides</a></li>
-          <li><a href="/assets/attendance_cel_panel.csv" download>Dataset</a></li>
-        </ul>
-
-        <h3>September 18 &mdash; Research Design</h3>
-        <ul class="pubs">
-          <li><a href="/view/gvpt622-research-design/" target="_blank" rel="noopener">Slides</a></li>
-        </ul>
-
-        <h3>September 25 &mdash; Relationships Between Two Variables</h3>
-        <ul class="pubs">
-          <li><a href="/view/gvpt622-relationships-two-variables/" target="_blank" rel="noopener">Slides</a></li>
-        </ul>
-
-        <h3>October 2 &mdash; Midterm Exam Review</h3>
-        <ul class="pubs">
-          <!-- Add materials here, e.g.:
-          <li><a href="/view/&lt;slug&gt;/" target="_blank" rel="noopener">Slides</a></li>
-          -->
-        </ul>
-
-        <h3>October 9 &mdash; Probability Theory</h3>
-        <ul class="pubs">
-          <li><a href="/view/gvpt622-probability-theory/" target="_blank" rel="noopener">Slides</a></li>
-        </ul>
-
-        <h3>October 23 &mdash; Hypothesis Testing I</h3>
-        <ul class="pubs">
-          <li><a href="/view/gvpt622-statistical-inference/" target="_blank" rel="noopener">Slides</a></li>
-        </ul>
-
-        <h3>October 30 &mdash; Hypothesis Testing II</h3>
-        <ul class="pubs">
-          <li><a href="/view/gvpt622-hypothesis-testing-ii/" target="_blank" rel="noopener">Slides</a></li>
-        </ul>
-
-        <h3>November 6 &mdash; Hypothesis Testing III</h3>
-        <ul class="pubs">
-          <li><a href="/view/gvpt622-hypothesis-testing-iii/" target="_blank" rel="noopener">Slides</a></li>
-        </ul>
-
-        <h3>November 13 &mdash; Midterm Exam Review</h3>
-        <ul class="pubs">
-          <!-- Add materials here, e.g.:
-          <li><a href="/view/&lt;slug&gt;/" target="_blank" rel="noopener">Slides</a></li>
-          -->
-        </ul>
-        <p class="small">Materials will be posted here.</p>
-
-        <h3>November 20 &mdash; Regression Analysis I</h3>
-        <ul class="pubs">
-          <!-- Add materials here, e.g.:
-          <li><a href="/view/&lt;slug&gt;/" target="_blank" rel="noopener">Slides</a></li>
-          -->
-        </ul>
-        <p class="small">Materials will be posted here.</p>
-
-        <h3>December 4 &mdash; Regression Analysis II</h3>
-        <ul class="pubs">
-          <!-- Add materials here, e.g.:
-          <li><a href="/view/&lt;slug&gt;/" target="_blank" rel="noopener">Slides</a></li>
-          -->
-        </ul>
-        <p class="small">Materials will be posted here.</p>
-
-        <h3>December 11 &mdash; Final Exam Review</h3>
-        <ul class="pubs">
-          <!-- Add materials here, e.g.:
-          <li><a href="/view/&lt;slug&gt;/" target="_blank" rel="noopener">Slides</a></li>
-          -->
-        </ul>
-        <p class="small">Materials will be posted here.</p>
-      </section>
-    </main>
-
-  </div>
-
-  <script src="/assets/site.js?v=4"></script>
+  <script src="/assets/main.js?v=1"></script>
 </body>
 </html>
